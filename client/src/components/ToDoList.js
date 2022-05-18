@@ -3,7 +3,7 @@ import './../App.css';
 
 
 
-class ToDoList extends React.Component {
+class ToDoList extends Component {
   render() {
     return (
       <div>

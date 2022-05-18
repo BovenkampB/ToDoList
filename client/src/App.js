@@ -44,22 +44,22 @@ class App extends Component {
             <img src={logo} className="App-logo" alt="To-do list" />
 
 
-            <Route path="/" element={<ToDoList />} />
-            <Route path="/" element={<Calendar />} />
-            <Route path="/" element={<Kennisbank />} />
+            {/* <Route path="/" element={<ToDoList />} />
+            <Route path="/calendar" element={<Calendar />} />
+            <Route path="/kennis" element={<Kennisbank />} />
             <navigation>
               <ul>
                 <li>
                   <Link to="/">ToDo</Link>
                 </li>
                 <li>
-                  <Link to="/Calendar">Calendar</Link>
+                  <Link to="/calendar">Calendar</Link>
                 </li>
                 <li>
-                  <Link to="/Kennisbank">Kennisbank</Link>
+                  <Link to="/kennis">Kennisbank</Link>
                 </li>
               </ul>
-            </navigation>
+            </navigation> */}
           </header>
 
           <ToDoList items={this.state.items} />
