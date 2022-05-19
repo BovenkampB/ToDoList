@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Nav from './NavHeader';
-import './css/kennisbank.css'
-import Grid from './js/Grid'
+import './../css/kennisbank.css'
+import Grid from './Grid'
 
 const arrOfObj = ["Drone", "3D-printer", "Front-end"]
 

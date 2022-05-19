@@ -1,15 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './components/js/App';
 import reportWebVitals from './reportWebVitals';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
-import Calendar from './components/Calendar';
-import Kennisbank from './components/Kennisbank';
+import Calendar from './components/js/Calendar';
+import Kennisbank from './components/js/Kennisbank';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

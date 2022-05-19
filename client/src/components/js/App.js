@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
+import './../css/App.css';
 import { scryRenderedComponentsWithType } from 'react-dom/test-utils';
-import ToDoList from './components/ToDoList';
-import Nav from './components/NavHeader';
+import ToDoList from './ToDoList';
+import Nav from './NavHeader';
 
 class App extends Component {
   constructor(props) {
