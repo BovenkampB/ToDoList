@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
+import Nav from './NavHeader';
+import './css/kennisbank.css'
+import Grid from './js/Grid'
+
+const arrOfObj = ["Drone", "3D-printer", "Front-end"]
 
 class Kennisbank extends Component {
     render() {
         return (
-            <div>
+            <div className='main'>
+                <Nav />
                 <h2>
                     Kennisbank
                 </h2>
@@ -11,6 +17,8 @@ class Kennisbank extends Component {
                     dit is een Kennisbank... hierin staan bevindingen die eerder gedaan zijn,
                     die we niet opnieuw hoeven leren maar kunnen hergebruiken :)
                 </p>
+
+                <Grid arrOfObj={arrOfObj} />
             </div>
         );
     }

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.png';
 import './App.css';
-import { Link } from 'react-router-dom';
 import { scryRenderedComponentsWithType } from 'react-dom/test-utils';
 import ToDoList from './components/ToDoList';
+import Nav from './components/NavHeader';
 
 class App extends Component {
   constructor(props) {
@@ -33,14 +32,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="To-do list" />
-          <navigation>
-            <Link to="/kennis">Kennis</Link> |{" "}
-            <Link to="/calendar">Calendar</Link>
-
-          </navigation>
-        </header>
+        <Nav />
 
         <ToDoList items={this.state.items} />
 

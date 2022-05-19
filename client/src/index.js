@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {
-  BrowserRouter,
+  BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
@@ -15,7 +15,7 @@ import Kennisbank from './components/Kennisbank';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="calendar" element={<Calendar />} />
@@ -29,7 +29,7 @@ root.render(
           }
         />
       </Routes>
-    </BrowserRouter>
+    </Router>
   </React.StrictMode>
 );
 

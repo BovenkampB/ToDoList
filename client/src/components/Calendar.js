@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
+import Nav from './NavHeader';
+
 
 class Calendar extends Component {
-
-
-
     render() {
         return (
-            <div>
+            <div className="app">
+                <Nav />
                 <h2>
                     Calendar
                 </h2>
