@@ -1,10 +1,6 @@
-import { render } from 'express/lib/response';
 import React, { Component } from 'react';
 
 class Kennisbank extends Component {
-
-
-
     render() {
         return (
             <div>
