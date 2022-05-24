@@ -8,8 +8,9 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Calendar from './components/js/Calendar';
-import Kennisbank from './components/js/Kennisbank';
+import Calendar from './components/js/CalendarPage';
+import Kennisbank from './components/js/KennisbankPage';
+import DroneSubjectPage from './components/js/DroneSubjectPage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,6 +21,9 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="calendar" element={<Calendar />} />
         <Route path="kennis" element={<Kennisbank />} />
+        <Route path="drone" element={<DroneSubjectPage />} />
+        <Route path="3dPrinter" element={<Kennisbank />} />
+        <Route path="frontend" element={<Kennisbank />} />
         <Route
           path="*"
           element={

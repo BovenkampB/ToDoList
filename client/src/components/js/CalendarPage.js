@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import Nav from './NavHeader';
+import './../css/Calendar.css';
 
 
-class Calendar extends Component {
+class CalendarPage extends Component {
     render() {
         return (
-            <div className="app">
+            <div className="main">
                 <Nav />
                 <h2>
                     Calendar
@@ -19,4 +20,4 @@ class Calendar extends Component {
 
 }
 
-export default Calendar;
+export default CalendarPage;

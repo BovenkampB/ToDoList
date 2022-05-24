@@ -1,21 +1,17 @@
 import React, { Component } from 'react';
 import './../css/grid.css';
 
-
-
-
 class Grid extends Component {
     render() {
-
-        const cells = this.props.arrOfObj.map(obj => 
-            <div style={{ backgroundColor: `${'#'+Math.random().toString(16).substr(-6)}`}} 
-            className="item">{obj}</div>)
+        const gridCells = this.props.subjects.map(subject =>
+            <div className="item">
+                {subject.link}
+            </div>)
 
         return (
             <div className='container' >
-                {cells}
+                {gridCells}
             </div>
-
         );
     }
 }

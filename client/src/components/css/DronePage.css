@@ -1,0 +1,32 @@
+td th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.lipoTable tr:nth-child(odd) {
+    background-color: #04AA6D;
+}
+
+.lipoTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.lionTable tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.lionTable tr:nth-child(even) {
+    background-color: #04AA6D;
+}
+
+tr:hover {
+    background-color: cornflowerblue !important;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+}
