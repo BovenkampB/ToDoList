@@ -1,0 +1,8 @@
+.container {
+    display: grid;
+    grid-template-columns: 15rem 15rem 15rem;
+    grid-gap: 3rem;
+    grid-auto-flow: row;
+    text-align: center;
+    height: 10rem;
+  }

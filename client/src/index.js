@@ -1,13 +1,41 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './components/js/App';
 import reportWebVitals from './reportWebVitals';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Calendar from './components/js/CalendarPage';
+import Kennisbank from './components/js/KennisbankPage';
+import DroneSubjectPage from './components/js/DroneSubjectPage';
+import ChessPage from './pages/ChessPage';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="calendar" element={<Calendar />} />
+        <Route path="kennis" element={<Kennisbank />} />
+        <Route path="drone" element={<DroneSubjectPage />} />
+        <Route path="3dPrinter" element={<Kennisbank />} />
+        <Route path="frontend" element={<Kennisbank />} />
+        <Route path="chess" element={<ChessPage />} />
+        <Route
+          path="*"
+          element={
+            <main style={{ padding: "1rem" }}>
+              <p>There's nothing here!</p>
+            </main>
+          }
+        />
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 
