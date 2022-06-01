@@ -6,19 +6,23 @@ import { Link } from 'react-router-dom';
 import dronePic from './../img/drone-logo.png';
 import frontendPic from './../img/frontend-logo.png';
 import printerPic from './../img/printer-logo.png';
+import chessPic from './../img/chess-logo.jpg';
 
 const droneSubject = [];
-droneSubject["link"] = <Link to="/drone"><img src={dronePic} className="subject-logo" alt="Drone link" /></Link>; //link to page for subject
+droneSubject["link"] = <Link to="/drone"><img src={dronePic} className="subject-logo" alt="Drone" /></Link>; //link to page for subject
 
 const printerSubject = [];
-printerSubject["link"] = <Link to="/drone"><img src={printerPic} className="subject-logo" alt="Drone link" /></Link>; //link to page for subject
+printerSubject["link"] = <Link to="/drone"><img src={printerPic} className="subject-logo" alt="Drone" /></Link>; //link to page for subject
 
 const frontendSubject = [];
-frontendSubject["link"] = <Link to="/drone"><img src={frontendPic} className="subject-logo" alt="Drone link" /></Link>; //link to page for subject
+frontendSubject["link"] = <Link to="/drone"><img src={frontendPic} className="subject-logo" alt="Drone" /></Link>; //link to page for subject
+
+const chessSubject = [];
+chessSubject["link"] = <Link to="/chess"><img src={chessPic} className="subject-logo" alt="Chess" /></Link>; //link to page for subject
 
 const subjects = [];
 
-subjects.push(droneSubject, printerSubject, frontendSubject);
+subjects.push(droneSubject, printerSubject, frontendSubject, chessSubject);
 
 
 class KennisbankPage extends Component {

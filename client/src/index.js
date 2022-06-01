@@ -11,6 +11,7 @@ import {
 import Calendar from './components/js/CalendarPage';
 import Kennisbank from './components/js/KennisbankPage';
 import DroneSubjectPage from './components/js/DroneSubjectPage';
+import ChessPage from './pages/ChessPage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,6 +25,7 @@ root.render(
         <Route path="drone" element={<DroneSubjectPage />} />
         <Route path="3dPrinter" element={<Kennisbank />} />
         <Route path="frontend" element={<Kennisbank />} />
+        <Route path="chess" element={<ChessPage />} />
         <Route
           path="*"
           element={
