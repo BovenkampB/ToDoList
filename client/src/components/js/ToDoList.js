@@ -12,12 +12,18 @@ class ToDoList extends Component {
 
           {this.props.items.map(item => (
             <li className='todoListItem' key={item.id}>
-              <input type="checkbox" onChange={this.handleChange} class="todoCheckbox"></input>
-              {item.text}
+              <div class="checkbox-container">
+                <label class="checkbox-label">
+                  <input type="checkbox" onChange={this.handleChange} class="todoCheckbox" />
+
+
+                  <span class="checkbox-custom rectangular"></span>
+                </label>
+                <div class="input-title">{item.text}</div>
+              </div>
             </li>
           ))}
         </ul>
-
       </div>
     );
   }

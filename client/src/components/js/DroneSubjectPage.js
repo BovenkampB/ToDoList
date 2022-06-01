@@ -81,9 +81,55 @@ class DroneSubjectPage extends Component {
                     </tr>
                 </table>
 
-Todo: 
-lijst maken ipv tabel 
-opacity: 0 wordt niet voorgelezen 
+
+                <div className='table'>
+                    <ul className='row header'>
+                        <li className='cell'>Numbers of cells</li>
+                        <li className='cell'>Full (V)</li>
+                        <li className='cell'>Storage (V)</li>
+                        <li className='cell'>Landing at (V)</li>      
+                    </ul>
+                    <ul className='row'>
+                        <li className='cell'>1s</li>
+                        <li className='cell'>4,20</li>
+                        <li className='cell'>3,85</li>
+                        <li className='cell'>3,10</li>      
+                    </ul>
+                    <ul className='row'>
+                        <li className='cell'>2s</li>
+                        <li className='cell'>8,40</li>
+                        <li className='cell'>7,70</li>
+                        <li className='cell'>6,20</li>      
+                    </ul>
+                    <ul className='row'>
+                        <li className='cell'>3s</li>
+                        <li className='cell'>12,60</li>
+                        <li className='cell'>11,55</li>
+                        <li className='cell'>9,30</li>      
+                    </ul>
+                    <ul className='row'>
+                        <li className='cell'>4s</li>
+                        <li className='cell'>16,80</li>
+                        <li className='cell'>15,40</li>
+                        <li className='cell'>12,40</li>      
+                    </ul>
+                    <ul className='row'>
+                        <li className='cell'>5s</li>
+                        <li className='cell'>21,00</li>
+                        <li className='cell'>19,25</li>
+                        <li className='cell'>15,50</li>      
+                    </ul>
+                    <ul className='row'>
+                        <li className='cell'>6s</li>
+                        <li className='cell'>25,20</li>
+                        <li className='cell'>23,10</li>
+                        <li className='cell'>18,60</li>      
+                    </ul>
+                </div>
+
+                Todo:
+                lijst maken ipv tabel
+                opacity: 0 wordt niet voorgelezen
 
                 <h3>
                     Lithium Ion

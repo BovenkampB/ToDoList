@@ -4,8 +4,6 @@ import './../css/Chess.css';
 const minuteInSec = 60;
 const tenMins = minuteInSec * 10;
 const fiveMins = minuteInSec * 5;
-const thirtyMins = minuteInSec * 30;
-const start = document.getElementById('startTime');
 
 class ChessTimer extends Component {
     constructor(props) {
@@ -15,9 +13,9 @@ class ChessTimer extends Component {
         this.timer = this.timer.bind(this)
         this.onPause = this.onPause.bind(this)
         this.onChange = this.onChange.bind(this)
-        // this.onReset = this.onReset.bind(this)
-        // this.switchTimer = this.switchTimer.bind(this)
-        // this.formatTimer = this.formatTimer.bind(this)
+        this.onReset = this.onReset.bind(this)
+        this.switchTimer = this.switchTimer.bind(this)
+        this.formatTimer = this.formatTimer.bind(this)
 
     }
 
@@ -55,8 +53,6 @@ class ChessTimer extends Component {
         this.setState({
             turn: !this.state.turn
         });
-
-        // TODO: set active timer to opponent
     }
 
     formatTimer = (seconds) => {
@@ -65,11 +61,7 @@ class ChessTimer extends Component {
         return timer1.toISOString().substr(11, 8);
     }
 
-    selectStartTime = () => {
-        this.setState({
-            startTime: fiveMins
-        })
-    }
+    
 
     onChange = () => {
         this.setState({

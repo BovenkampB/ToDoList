@@ -1,0 +1,31 @@
+nav>img {
+    margin: 15px;
+    display: block;
+    margin: auto;
+}
+
+.logo { 
+    margin-bottom: 25px;
+}
+
+.links > a{
+    top: 55px;
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.links >a:hover {
+    background-color: #555;
+}
+
+.links >a:active {
+    background-color: black;
+}
+
+.links >a:visited {
+    background-color: orangered;
+}
