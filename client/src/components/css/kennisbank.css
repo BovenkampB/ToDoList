@@ -1,5 +1,5 @@
 .main {
-    background-color: darkgoldenrod;
+    background-color: rgb(230, 222, 154);;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,4 +18,5 @@
 .subject-logo {
     /* height: auto; */
     width: 100%;
+    height: 150px;
 }
