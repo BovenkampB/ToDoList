@@ -27,11 +27,6 @@ class ToDoList extends Component {
     // if (checkIfEverythingIsCheckedOff()){
     //   console.log("good job finishing all todo's! ")
     // }
-
-
-     
-
-    
   }
 
   // checkIfEverythingIsCheckedOff() {

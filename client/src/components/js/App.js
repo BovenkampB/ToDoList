@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import './../css/App.css';
 import { scryRenderedComponentsWithType } from 'react-dom/test-utils';
 import ToDoList from './ToDoList';
@@ -7,29 +7,49 @@ import Nav from './NavHeader';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { items: [], text: '' };
+    // if (localStorage.getItem('items').length ==0) {
+      this.state = { items: [], text: '' };
+    // }
+    // else {
+      // this.state = JSON.parse(localStorage.getItem('items'));
+    // }
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   };
 
   componentDidMount() {
-    this.callBackendAPI()
-      .then(res => this.setState({ data: res.express }))
-      .catch(err => console.log(err));
-  }
+    let items = JSON.parse(localStorage.getItem('items'));
+    this.setState(state => ({
+      items: items,
+      text: ''
+    }));
+
+
+    // this.callBackendAPI()
+    //   .then(res => this.setState({ data: res.express }))
+    //   .catch(err => console.log(err));
+  // }
 
   // fetching the GET route from the Express server which matches the GET route from server.js
-  callBackendAPI = async () => {
-    const response = await fetch('/express_backend');
-    const body = await response.json();
+  // callBackendAPI = async () => {
+  //   const response = await fetch('/express_backend');
+  //   const body = await response.json();
 
-    if (response.status !== 200) {
-      throw Error(body.message)
-    }
-    return body;
+  //   if (response.status !== 200) {
+  //     throw Error(body.message)
+  //   }
+  //   return body;
   };
 
+
+
+
   render() {
+
+    // React.useEffect(() => {
+    //   localStorage.setItem('items', items);
+    // }, [items]);
+
     return (
       <div className="App">
         <Nav />
@@ -69,6 +89,9 @@ class App extends Component {
       items: state.items.concat(newItem),
       text: ''
     }));
+
+    localStorage.setItem("items", JSON.stringify(this.state.items.concat(newItem)));
+
   }
 
 }
