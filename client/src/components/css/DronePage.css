@@ -31,7 +31,7 @@ th {
     color: white;
 }
 
-.cell { 
+.cell {
     text-align: right;
     /* width: 48%; */
     float: left;
@@ -43,35 +43,47 @@ th {
     /* text-align:left; */
 }
 
-.row:nth-child(even){
-    background-color: #f2f2f2;;
+.row:nth-child(even) {
+    background-color: #f2f2f2;
+    ;
 }
 
-.table{
+.table {
     display: table;
     background-color: #04AA6D;
 
 }
 
-.row{
+.row {
 
     display: table-row;
 }
 
-.cell { 
+.cell {
     text-align: left;
     font-family: fantasy;
     display: table-cell;
-    width:135px;
+    width: 135px;
 }
 
-.header { 
+.header {
     color: white;
-    
+
     font-weight: bold;
 }
 
-.header > li { 
+.header>li {
     font-family: 'Times New Roman', Times, serif;
 
+}
+
+.sr-only {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
 }

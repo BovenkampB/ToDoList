@@ -14,6 +14,10 @@ class App extends Component {
 
   componentDidMount() {
     let items = JSON.parse(localStorage.getItem('items'));
+
+    if(localStorage.getItem('items') == null){ 
+      items = [];
+    }
     this.setState(state => ({
       items: items,
       text: ''
